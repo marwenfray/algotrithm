@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM sentence reader
 VAR
     str: STRING;
     chrN, vowN, worN : INTEGER:=0;
