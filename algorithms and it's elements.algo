@@ -1,0 +1,29 @@
+ALGORITHM algorithm_name
+VAR
+    str: STRING;
+    chrN, vowN, worN : INTEGER:=0;
+    STR: STRING:= str.toUppercase;
+BEGIN
+//input
+    write("Please write a sentence and finish it with a point.")
+    read(str)
+//char count.
+WHILE (str[chrN]<>".") DO
+    chrN:= chrN+1
+END_WHILE
+chrN:= chrN+1
+//word count.
+WHILE (str[worN]=" ") DO
+    worN:= worN+1
+END_WHILE
+worN:=worN+1
+//vowel count.
+WHILE (str[vowN]:= A OR E OR U OR I OR O) DO
+    vowN:=vowN+1
+END_WHILE
+//output
+write("your sentence contains " chrN " characters" )
+write("your sentence contains " worN " words")
+write("your sentence contains " vowN " vowels" )
+
+END
